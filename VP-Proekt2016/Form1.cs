@@ -28,5 +28,12 @@ namespace VP_Proekt2016
             High_Scores tmp = new High_Scores();
             tmp.Show();
         }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            Main_Form tmp = new Main_Form();
+            tmp.Show();
+            //this.Dispose();
+        }
     }
 }
