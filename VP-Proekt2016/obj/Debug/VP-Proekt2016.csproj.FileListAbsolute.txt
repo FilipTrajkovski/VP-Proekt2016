@@ -1,1 +1,9 @@
 c:\users\filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.exe.config
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.exe
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.pdb
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.csprojResolveAssemblyReference.cache
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Form1.resources
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Properties.Resources.resources
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.csproj.GenerateResource.Cache
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.exe
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.pdb
