@@ -21,7 +21,12 @@ namespace VP_Proekt2016
         {
             HelpForm tmp = new HelpForm();
             tmp.Show();
-            
+        }
+
+        private void btnHigh_Click(object sender, EventArgs e)
+        {
+            High_Scores tmp = new High_Scores();
+            tmp.Show();
         }
     }
 }

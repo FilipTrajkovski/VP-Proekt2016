@@ -40,7 +40,7 @@
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(100, 23);
             this.btnPlay.TabIndex = 0;
-            this.btnPlay.Text = "Play";
+            this.btnPlay.Text = "New Game";
             this.btnPlay.UseVisualStyleBackColor = true;
             // 
             // btnHigh
@@ -49,8 +49,9 @@
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(100, 23);
             this.btnHigh.TabIndex = 1;
-            this.btnHigh.Text = "High Score";
+            this.btnHigh.Text = "High Scores";
             this.btnHigh.UseVisualStyleBackColor = true;
+            this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
             // 
             // btnHelp
             // 

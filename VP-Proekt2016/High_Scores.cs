@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace VP_Proekt2016
 {
-    public partial class HelpForm : Form
+    public partial class High_Scores : Form
     {
-        public HelpForm()
+        public High_Scores()
         {
             InitializeComponent();
         }
 
-        private void HelpForm_Load(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
