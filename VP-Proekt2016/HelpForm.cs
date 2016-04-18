@@ -10,18 +10,12 @@ using System.Windows.Forms;
 
 namespace VP_Proekt2016
 {
-    public partial class Form1 : Form
+    public partial class HelpForm : Form
     {
-        public Form1()
+        public HelpForm()
         {
             InitializeComponent();
         }
 
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            HelpForm tmp = new HelpForm();
-            tmp.Show();
-            
-        }
     }
 }

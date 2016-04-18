@@ -7,3 +7,4 @@ C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.csproj.GenerateResource.Cache
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.exe
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.pdb
+C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.HelpForm.resources

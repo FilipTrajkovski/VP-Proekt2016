@@ -60,6 +60,7 @@
             this.btnHelp.TabIndex = 2;
             this.btnHelp.Text = "Help";
             this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // Form1
             // 
@@ -70,6 +71,7 @@
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnHigh);
             this.Controls.Add(this.btnPlay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
