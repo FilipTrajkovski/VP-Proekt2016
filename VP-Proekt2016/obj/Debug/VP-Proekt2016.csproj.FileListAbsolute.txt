@@ -10,3 +10,15 @@ C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.HelpForm.resources
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.High_Scores.resources
 C:\Users\Filip\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Main_Form.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.exe.config
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.exe
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.pdb
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.exe
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\bin\Debug\VP-Proekt2016.pdb
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.csprojResolveAssemblyReference.cache
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Form1.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.HelpForm.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.High_Scores.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Main_Form.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP_Proekt2016.Properties.Resources.resources
+C:\Users\Akuma\documents\visual studio 2013\Projects\VP-Proekt2016\VP-Proekt2016\obj\Debug\VP-Proekt2016.csproj.GenerateResource.Cache
