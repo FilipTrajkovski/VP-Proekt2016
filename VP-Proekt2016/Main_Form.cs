@@ -12,42 +12,13 @@ namespace VP_Proekt2016
 {
     public partial class Main_Form : Form
     {
+        Sudoku test = new Sudoku();
+        
         public Main_Form()
         {
             InitializeComponent();
         }
-        public void GenerateLevel(string diff) {
-            int minPos, maxPos, noOfSets;
-
-            // Now unmask positions and create problem set.
-            switch (diff)
-            {
-
-                case "Easy":
-                    minPos = 4;
-                    maxPos = 6;
-                    noOfSets = 8;
-                    //UnMask(minPos, maxPos, noOfSets);
-                    break;
-                case "Medium":
-                    minPos = 3;
-                    maxPos = 5;
-                    noOfSets = 7;
-                    //UnMask(minPos, maxPos, noOfSets);
-                    break;
-                case "Hard":
-                    minPos = 3;
-                    maxPos = 5;
-                    noOfSets = 6;
-                    //UnMask(minPos, maxPos, noOfSets);
-                    break;
-                default:
-                    //UnMask(3, 6, 7);
-                    
-                    break;
-            }
-        }
-
+        
         private void btnPlay_Click(object sender, EventArgs e)
         {
             if (cbDif.SelectedItem == null)
@@ -58,7 +29,7 @@ namespace VP_Proekt2016
             {
                 lblSelect.Text = "";
                 string level = cbDif.SelectedItem.ToString();
-                GenerateLevel(level);
+                lblTest.Text=test.GenerateLevel(level);
             }
         }
 

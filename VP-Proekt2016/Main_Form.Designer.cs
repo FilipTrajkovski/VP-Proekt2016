@@ -33,6 +33,7 @@
             this.cbDif = new System.Windows.Forms.ComboBox();
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblSelect = new System.Windows.Forms.Label();
+            this.lblTest = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -78,12 +79,22 @@
             this.lblSelect.Size = new System.Drawing.Size(0, 13);
             this.lblSelect.TabIndex = 3;
             // 
+            // lblTest
+            // 
+            this.lblTest.AutoSize = true;
+            this.lblTest.Location = new System.Drawing.Point(51, 238);
+            this.lblTest.Name = "lblTest";
+            this.lblTest.Size = new System.Drawing.Size(35, 13);
+            this.lblTest.TabIndex = 4;
+            this.lblTest.Text = "label2";
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(581, 328);
+            this.Controls.Add(this.lblTest);
             this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.cbDif);
@@ -104,5 +115,6 @@
         private System.Windows.Forms.ComboBox cbDif;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Label lblSelect;
+        public System.Windows.Forms.Label lblTest;
     }
 }
