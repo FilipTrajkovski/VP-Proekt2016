@@ -8,13 +8,20 @@ namespace VP_Proekt2016
 {
     class Sudoku
     {
-        public static int RED_MAX = 9;
-        public static int KOL_MAX = 9;
-        int[][] resenie = new int[RED_MAX][];
+        private static int RED_MAX = 9;
+        private static int KOL_MAX = 9;
+        private static int SUB_MATRICA_GOL = 3;
+
+        private int[][] resenie = new int[RED_MAX][];
         int[][] tekovnoResavanje = new int[RED_MAX][];
-        bool redica = true;
-        Random global;
         private int[][] DefaultSet = new int[RED_MAX][];
+
+        private int[] setirajRedPoz = { 0, 0, 0, 3, 3, 3, 6, 6, 6 };
+        private int[] setirajKolonaPoz = { 0, 3, 6, 0, 3, 6, 0, 3, 6 };
+
+        private bool redica = true;
+        Random global;
+
         public Sudoku()
         {
             int[] red1 = { 7, 9, 2, 3, 5, 1, 8, 4, 6 };
@@ -57,23 +64,99 @@ namespace VP_Proekt2016
                 }
             }
 
-            int roworcolPos = global.Next(1, 3);
+            int pozicija = global.Next(1, 3);
             int setNumber = global.Next(1, 3);
 
             if (redica)
             {
-                
+                zameniRedKolona(setNumber, pozicija, "ROWS");
                 redica = false;
             }
             else
             {
-                
+                zameniRedKolona(setNumber, pozicija, "COLS");
                 redica = true;
             }
             setNumber = global.Next(1, 3);
-            
+            zameniRedKolona(setNumber, pozicija, "SETS");
 
 
+        }
+        private void zameniRedKolona(int setNumber, int pozicija, String type)
+        {
+            int redKol1, redKol2 = 0;
+            switch (type)
+            {
+                case "ROWS":
+                    redKol1 = setirajRedPoz[setNumber*3]*pozicija;
+                    if (pozicija == 2)
+                    {
+                        redKol2 = setirajRedPoz[setNumber * 3];
+                    }
+                    else
+                    {
+                        redKol2 = redKol1 + 1;
+                    }
+                    for (int i = 0; i < RED_MAX; i++)
+                    {
+                        resenie[i][redKol1] = DefaultSet[i][redKol2];
+                        resenie[i][redKol2] = DefaultSet[i][redKol1];
+                    }
+                    break;
+                case "COLS":
+                    redKol1 = setirajKolonaPoz[setNumber * 3] + pozicija;
+                    if (pozicija == 2)
+                    {
+                        redKol2 = setirajKolonaPoz[setNumber * 3];
+                    }
+                    else
+                    {
+                        redKol2 = redKol1 + 1;
+                    }
+                    for (int i = 0; i < KOL_MAX; i++)
+                    {
+                        resenie[redKol1][i] = DefaultSet[redKol2][i];
+                        resenie[redKol2][i] = DefaultSet[redKol1][i];
+                    }
+                    break;
+                case "SETS":
+                    redKol1 = setNumber;
+                    if (setNumber == 2)
+                    {
+                        redKol2 = 0;
+                    }
+                    else
+                    {
+                        redKol2 = redKol1 + 1;
+                    }
+                    if (redica)
+                    {    
+                        for (int i = 0; i < KOL_MAX; i++)
+                        {
+                            for (int j = 0; j < SUB_MATRICA_GOL; j++)
+                            {
+                                int temp = resenie[redKol2 * 3 + i][j];
+                                resenie[redKol2 * 3 + i][j] = resenie[redKol1 * 3 + i][j];
+                                resenie[redKol1 * 3 + i][j] = temp;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < KOL_MAX; i++)
+                        {
+                            for (int j = 0; j < SUB_MATRICA_GOL; j++)
+                            {
+                                int temp = resenie[j][redKol1 * 3 + i];
+                                resenie[j][redKol1 * 3 + i] = resenie[j][redKol2 * 3 + i];
+                                resenie[j][redKol2 * 3 + i] = temp;
+                            }
+                        }    
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
     }
