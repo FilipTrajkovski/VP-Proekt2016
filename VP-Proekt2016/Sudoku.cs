@@ -52,19 +52,33 @@ namespace VP_Proekt2016
             DefaultSet[8] = red9;
             global = new Random();
         }
-        public string GenerirajSet()
+        public void GenerirajSet(string level)
         {
+            int minPos = 0;
+            int maxPos = 0;
+            int brPodSet = 0;
             GeneriranjeResenie();
-            string test = "";
-            for (int i = 0; i < RED_MAX; i++)
+            switch (level)
             {
-                for (int j = 0; j < KOL_MAX; j++)
-                {
-                    test += tekovnoResavanje[i][j] + "\t";
-                }
-                test += "\n";
+                case "EASY":
+                    minPos = 3;
+                    maxPos = 5;
+                    brPodSet = 7;
+                    tekovenSet(brPodSet, minPos, maxPos);
+                    break;
+                case "MEDIUM":
+                    minPos = 3;
+                    maxPos = 5;
+                    brPodSet = 6;
+                    tekovenSet(brPodSet, minPos, maxPos);
+                    break;
+                case "HARD":
+                    minPos = 2;
+                    maxPos = 4;
+                    brPodSet = 5;
+                    tekovenSet(brPodSet, minPos, maxPos);
+                    break;
             }
-            return test;
         }
         private void GeneriranjeResenie()
         {
@@ -78,33 +92,33 @@ namespace VP_Proekt2016
                 }
             }
             int pozicija = global.Next(1, 3);
-            int setNumber = global.Next(1, 3);
+            int brSet = global.Next(1, 3);
 
             if (redica)
             {
-                zameniRedKolona(setNumber, pozicija, "ROWS");
+                zameniRedKolona(brSet, pozicija, "ROWS");
                 redica = false;
             }
             else
             {
-                zameniRedKolona(setNumber, pozicija, "COLS");
+                zameniRedKolona(brSet, pozicija, "COLS");
                 redica = true;
             }
-            setNumber = global.Next(1, 3);
-            zameniRedKolona(setNumber, pozicija, "SETS");
+            brSet = global.Next(1, 3);
+            zameniRedKolona(brSet, pozicija, "SETS");
 
 
         }
-        private void zameniRedKolona(int setNumber, int pozicija, String type)
+        private void zameniRedKolona(int brSet, int pozicija, String type)
         {
             int redKol1, redKol2 = 0;
             switch (type)
             {
                 case "ROWS":
-                    redKol1 = setirajRedPoz[setNumber*3]+pozicija;
+                    redKol1 = setirajRedPoz[brSet * 3] + pozicija;
                     if (pozicija == 2)
                     {
-                        redKol2 = setirajRedPoz[setNumber * 3];
+                        redKol2 = setirajRedPoz[brSet * 3];
                     }
                     else
                     {
@@ -117,10 +131,10 @@ namespace VP_Proekt2016
                     }
                     break;
                 case "COLS":
-                    redKol1 = setirajKolonaPoz[setNumber * 3] + pozicija;
+                    redKol1 = setirajKolonaPoz[brSet * 3] + pozicija;
                     if (pozicija == 2)
                     {
-                        redKol2 = setirajKolonaPoz[setNumber * 3];
+                        redKol2 = setirajKolonaPoz[brSet * 3];
                     }
                     else
                     {
@@ -133,8 +147,8 @@ namespace VP_Proekt2016
                     }
                     break;
                 case "SETS":
-                    redKol1 = setNumber;
-                    if (setNumber == 2)
+                    redKol1 = brSet;
+                    if (brSet == 2)
                     {
                         redKol2 = 0;
                     }
@@ -169,6 +183,39 @@ namespace VP_Proekt2016
                     break;
                 default:
                     break;
+            }
+        }
+        private void tekovenSet(int brPodSet,int minPos,int maxPos)
+        {
+            int[] posX = { 0, 0, 0, 1, 1, 1, 2, 2, 2 };
+            int[] posY = { 0, 1, 2, 0, 1, 2, 0, 1, 2 };
+            int[] maskedSet = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            int setCount = 0;
+
+            while (setCount < brPodSet)
+            {
+                int i = global.Next(0, 9);
+
+                if (maskedSet[i] == 0)
+                {
+                    maskedSet[i] = 1;
+                    setCount++;
+                    int maskPos = global.Next(minPos, maxPos);
+                    int j = 0;
+
+                    while (j < maskPos)
+                    {
+                        int newPos = global.Next(1, 9);
+                        int x = setirajRedPoz[i] + posX[newPos];
+                        int y = setirajKolonaPoz[i] + posY[newPos];
+
+                        if (tekovnoResavanje[x][y] == 0)
+                        {
+                            tekovnoResavanje[x][y] = resenie[x][y];
+                            j++;
+                        }
+                    }
+                }
             }
         }
 
