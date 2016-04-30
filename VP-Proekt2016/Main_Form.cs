@@ -29,7 +29,7 @@ namespace VP_Proekt2016
             {
                 lblSelect.Text = "";
                 string level = cbDif.SelectedItem.ToString();
-                lblTest.Text=test.GenerateLevel(level);
+                lblTest.Text=test.GenerirajSet();
             }
         }
 

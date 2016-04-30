@@ -24,15 +24,15 @@ namespace VP_Proekt2016
 
         public Sudoku()
         {
-            int[] red1 = { 7, 9, 2, 3, 5, 1, 8, 4, 6 };
-            int[] red2 = { 4, 6, 8, 9, 2, 7, 5, 1, 3 };
-            int[] red3 = { 1, 3, 5, 6, 8, 4, 7, 9, 2 };
-            int[] red4 = { 6, 2, 1, 5, 7, 9, 4, 3, 8 };
-            int[] red5 = { 5, 8, 3, 2, 4, 6, 1, 7, 9 };
-            int[] red6 = { 9, 7, 4, 8, 1, 3, 2, 6, 5 };
-            int[] red7 = { 8, 1, 6, 4, 9, 2, 3, 5, 7 };
-            int[] red8 = { 3, 5, 7, 1, 6, 8, 9, 2, 4 };
-            int[] red9 = { 2, 4, 9, 7, 3, 5, 6, 8, 1 };
+            int[] red1 = { 8, 1, 3, 2, 7, 4, 6, 9, 5 };
+            int[] red2 = { 5, 6, 4, 8, 3, 9, 2, 7, 1 };
+            int[] red3 = { 9, 2, 7, 6, 1, 5, 4, 3, 8 };
+            int[] red4 = { 4, 3, 8, 1, 2, 7, 5, 6, 9 };
+            int[] red5 = { 1, 5, 6, 4, 9, 8, 3, 2, 7 };
+            int[] red6 = { 7, 9, 2, 3, 5, 6, 1, 8, 4 };
+            int[] red7 = { 2, 4, 1, 7, 8, 3, 9, 5, 6 };
+            int[] red8 = { 6, 8, 5, 9, 4, 2, 7, 1, 3 };
+            int[] red9 = { 3, 7, 9, 5, 6, 1, 8, 4, 2 };
             for (int j = 0; j < tekovnoResavanje.Length; j++)
             {
                 tekovnoResavanje[j] = new int[KOL_MAX];
@@ -52,6 +52,20 @@ namespace VP_Proekt2016
             DefaultSet[8] = red9;
             global = new Random();
         }
+        public string GenerirajSet()
+        {
+            GeneriranjeResenie();
+            string test = "";
+            for (int i = 0; i < RED_MAX; i++)
+            {
+                for (int j = 0; j < KOL_MAX; j++)
+                {
+                    test += tekovnoResavanje[i][j] + "\t";
+                }
+                test += "\n";
+            }
+            return test;
+        }
         private void GeneriranjeResenie()
         {
             for (int i = 0; i < RED_MAX; i++)
@@ -63,7 +77,6 @@ namespace VP_Proekt2016
                     tekovnoResavanje[i][j] = 0;
                 }
             }
-
             int pozicija = global.Next(1, 3);
             int setNumber = global.Next(1, 3);
 
@@ -88,7 +101,7 @@ namespace VP_Proekt2016
             switch (type)
             {
                 case "ROWS":
-                    redKol1 = setirajRedPoz[setNumber*3]*pozicija;
+                    redKol1 = setirajRedPoz[setNumber*3]+pozicija;
                     if (pozicija == 2)
                     {
                         redKol2 = setirajRedPoz[setNumber * 3];
@@ -135,9 +148,9 @@ namespace VP_Proekt2016
                         {
                             for (int j = 0; j < SUB_MATRICA_GOL; j++)
                             {
-                                int temp = resenie[redKol2 * 3 + i][j];
-                                resenie[redKol2 * 3 + i][j] = resenie[redKol1 * 3 + i][j];
-                                resenie[redKol1 * 3 + i][j] = temp;
+                                int temp = resenie[redKol2 * 3 + j][i];
+                                resenie[redKol2 * 3 + j][i] = resenie[redKol1 * 3 + j][i];
+                                resenie[redKol1 * 3 + j][i] = temp;
                             }
                         }
                     }
@@ -147,9 +160,9 @@ namespace VP_Proekt2016
                         {
                             for (int j = 0; j < SUB_MATRICA_GOL; j++)
                             {
-                                int temp = resenie[j][redKol1 * 3 + i];
-                                resenie[j][redKol1 * 3 + i] = resenie[j][redKol2 * 3 + i];
-                                resenie[j][redKol2 * 3 + i] = temp;
+                                int temp = resenie[i][redKol1 * 3 + j];
+                                resenie[i][redKol1 * 3 + j] = resenie[i][redKol2 * 3 + j];
+                                resenie[i][redKol2 * 3 + j] = temp;
                             }
                         }    
                     }
