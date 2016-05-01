@@ -66,7 +66,7 @@ namespace VP_Proekt2016
             grid[7] = temp8;
             grid[8] = temp9;
         }
-        private void SmeniSelektiran(Label tekoven)
+        private void smeniSelektiran(Label tekoven)
         {
             for (int i = 0; i < 9; i++)
             {
@@ -84,10 +84,30 @@ namespace VP_Proekt2016
                 tekoven.BackColor = System.Drawing.Color.LightPink;
             }
         }
+        private void vnesiBroj(Label selektiran)
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (grid[i][j].BackColor == System.Drawing.Color.LightPink)
+                    {
+                        grid[i][j].Text = selektiran.Text;
+                    }
+
+                }
+            }
+        }
         private void Matrix_1_1_Click(object sender, EventArgs e)
         {
             Label temp = (Label)sender;
-            SmeniSelektiran(temp);
+            smeniSelektiran(temp);
+        }
+
+        private void Click_9_Click(object sender, EventArgs e)
+        {
+            Label temp = (Label)sender;
+            vnesiBroj(temp);
         }
     }
 }

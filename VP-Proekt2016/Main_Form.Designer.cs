@@ -114,6 +114,15 @@
             this.Matrix_9_3 = new System.Windows.Forms.Label();
             this.Matrix_9_2 = new System.Windows.Forms.Label();
             this.Matrix_9_1 = new System.Windows.Forms.Label();
+            this.Click_2 = new System.Windows.Forms.Label();
+            this.Click_1 = new System.Windows.Forms.Label();
+            this.Click_3 = new System.Windows.Forms.Label();
+            this.Click_6 = new System.Windows.Forms.Label();
+            this.Click_4 = new System.Windows.Forms.Label();
+            this.Click_5 = new System.Windows.Forms.Label();
+            this.Click_9 = new System.Windows.Forms.Label();
+            this.Click_7 = new System.Windows.Forms.Label();
+            this.Click_8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -154,7 +163,7 @@
             // 
             this.lblSelect.AutoSize = true;
             this.lblSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblSelect.Location = new System.Drawing.Point(12, 176);
+            this.lblSelect.Location = new System.Drawing.Point(12, 155);
             this.lblSelect.Name = "lblSelect";
             this.lblSelect.Size = new System.Drawing.Size(0, 13);
             this.lblSelect.TabIndex = 3;
@@ -1293,12 +1302,138 @@
             this.Matrix_9_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Matrix_9_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
+            // Click_2
+            // 
+            this.Click_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_2.Location = new System.Drawing.Point(77, 191);
+            this.Click_2.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_2.Name = "Click_2";
+            this.Click_2.Size = new System.Drawing.Size(30, 30);
+            this.Click_2.TabIndex = 85;
+            this.Click_2.Text = "2";
+            this.Click_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_2.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_1
+            // 
+            this.Click_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_1.Location = new System.Drawing.Point(43, 191);
+            this.Click_1.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_1.Name = "Click_1";
+            this.Click_1.Size = new System.Drawing.Size(30, 30);
+            this.Click_1.TabIndex = 86;
+            this.Click_1.Text = "1";
+            this.Click_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_1.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_3
+            // 
+            this.Click_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_3.Location = new System.Drawing.Point(111, 191);
+            this.Click_3.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_3.Name = "Click_3";
+            this.Click_3.Size = new System.Drawing.Size(30, 30);
+            this.Click_3.TabIndex = 87;
+            this.Click_3.Text = "3";
+            this.Click_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_3.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_6
+            // 
+            this.Click_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_6.Location = new System.Drawing.Point(111, 225);
+            this.Click_6.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_6.Name = "Click_6";
+            this.Click_6.Size = new System.Drawing.Size(30, 30);
+            this.Click_6.TabIndex = 90;
+            this.Click_6.Text = "6";
+            this.Click_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_6.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_4
+            // 
+            this.Click_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_4.Location = new System.Drawing.Point(43, 225);
+            this.Click_4.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_4.Name = "Click_4";
+            this.Click_4.Size = new System.Drawing.Size(30, 30);
+            this.Click_4.TabIndex = 89;
+            this.Click_4.Text = "4";
+            this.Click_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_4.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_5
+            // 
+            this.Click_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_5.Location = new System.Drawing.Point(77, 225);
+            this.Click_5.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_5.Name = "Click_5";
+            this.Click_5.Size = new System.Drawing.Size(30, 30);
+            this.Click_5.TabIndex = 88;
+            this.Click_5.Text = "5";
+            this.Click_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_5.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_9
+            // 
+            this.Click_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_9.Location = new System.Drawing.Point(111, 259);
+            this.Click_9.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_9.Name = "Click_9";
+            this.Click_9.Size = new System.Drawing.Size(30, 30);
+            this.Click_9.TabIndex = 93;
+            this.Click_9.Text = "9";
+            this.Click_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_9.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_7
+            // 
+            this.Click_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_7.Location = new System.Drawing.Point(43, 259);
+            this.Click_7.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_7.Name = "Click_7";
+            this.Click_7.Size = new System.Drawing.Size(30, 30);
+            this.Click_7.TabIndex = 92;
+            this.Click_7.Text = "7";
+            this.Click_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_7.Click += new System.EventHandler(this.Click_9_Click);
+            // 
+            // Click_8
+            // 
+            this.Click_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Click_8.Location = new System.Drawing.Point(77, 259);
+            this.Click_8.Margin = new System.Windows.Forms.Padding(2);
+            this.Click_8.Name = "Click_8";
+            this.Click_8.Size = new System.Drawing.Size(30, 30);
+            this.Click_8.TabIndex = 91;
+            this.Click_8.Text = "8";
+            this.Click_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Click_8.Click += new System.EventHandler(this.Click_9_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(477, 306);
+            this.Controls.Add(this.Click_9);
+            this.Controls.Add(this.Click_7);
+            this.Controls.Add(this.Click_8);
+            this.Controls.Add(this.Click_6);
+            this.Controls.Add(this.Click_4);
+            this.Controls.Add(this.Click_5);
+            this.Controls.Add(this.Click_3);
+            this.Controls.Add(this.Click_1);
+            this.Controls.Add(this.Click_2);
             this.Controls.Add(this.Matrix_9_9);
             this.Controls.Add(this.Matrix_9_8);
             this.Controls.Add(this.Matrix_9_7);
@@ -1481,5 +1616,14 @@
         private System.Windows.Forms.Label Matrix_9_3;
         private System.Windows.Forms.Label Matrix_9_2;
         private System.Windows.Forms.Label Matrix_9_1;
+        private System.Windows.Forms.Label Click_2;
+        private System.Windows.Forms.Label Click_1;
+        private System.Windows.Forms.Label Click_3;
+        private System.Windows.Forms.Label Click_6;
+        private System.Windows.Forms.Label Click_4;
+        private System.Windows.Forms.Label Click_5;
+        private System.Windows.Forms.Label Click_9;
+        private System.Windows.Forms.Label Click_7;
+        private System.Windows.Forms.Label Click_8;
     }
 }
