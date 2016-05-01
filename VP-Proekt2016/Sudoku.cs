@@ -13,7 +13,7 @@ namespace VP_Proekt2016
         private static int SUB_MATRICA_GOL = 3;
 
         private int[][] resenie = new int[RED_MAX][];
-        int[][] tekovnoResavanje = new int[RED_MAX][];
+        public int[][] tekovnoResavanje = new int[RED_MAX][];
         private int[][] DefaultSet = new int[RED_MAX][];
 
         private int[] setirajRedPoz = { 0, 0, 0, 3, 3, 3, 6, 6, 6 };
@@ -60,19 +60,19 @@ namespace VP_Proekt2016
             GeneriranjeResenie();
             switch (level)
             {
-                case "EASY":
+                case "Easy":
                     minPos = 3;
                     maxPos = 5;
                     brPodSet = 7;
                     tekovenSet(brPodSet, minPos, maxPos);
                     break;
-                case "MEDIUM":
+                case "Medium":
                     minPos = 3;
                     maxPos = 5;
                     brPodSet = 6;
                     tekovenSet(brPodSet, minPos, maxPos);
                     break;
-                case "HARD":
+                case "Hard":
                     minPos = 2;
                     maxPos = 4;
                     brPodSet = 5;
