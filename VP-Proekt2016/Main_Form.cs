@@ -37,6 +37,7 @@ namespace VP_Proekt2016
                         if (test.tekovnoResavanje[i][j] != 0)
                         {
                             grid[i][j].Text = test.tekovnoResavanje[i][j].ToString();
+                            grid[i][j].Font = new Font(grid[i][j].Font, FontStyle.Bold);
                         }
                     }
                 }
@@ -65,100 +66,28 @@ namespace VP_Proekt2016
             grid[7] = temp8;
             grid[8] = temp9;
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void SmeniSelektiran(Label tekoven)
         {
-
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (grid[i][j].BackColor == System.Drawing.Color.LightPink)
+                    {
+                        grid[i][j].BackColor = System.Drawing.Color.White;
+                    }
+                    
+                }
+            }
+            if (!tekoven.Font.Bold)
+            {
+                tekoven.BackColor = System.Drawing.Color.LightPink;
+            }
         }
-
-        private void label9_Click(object sender, EventArgs e)
+        private void Matrix_1_1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label30_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label39_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label48_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label57_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label66_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label75_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label38_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label47_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label56_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label65_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label74_Click(object sender, EventArgs e)
-        {
-
+            Label temp = (Label)sender;
+            SmeniSelektiran(temp);
         }
     }
 }
