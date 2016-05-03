@@ -12,8 +12,17 @@ namespace VP_Proekt2016
 {
     public partial class Main_Form : Form
     {
-        Sudoku test = new Sudoku();
-        Label[][] grid = new Label[9][];
+        private Sudoku test = new Sudoku();
+
+        private Label[][] grid = new Label[9][];
+        private Label[] grid_Select = new Label[9];
+
+        private Timer timer=new Timer();
+        private int duration_sec = 0;
+        private int duration_min = 0;
+        private int duration_hrs = 0;
+
+        private bool flag;
         public Main_Form()
         {
             InitializeComponent();
@@ -39,13 +48,20 @@ namespace VP_Proekt2016
                             grid[i][j].Text = test.tekovnoResavanje[i][j].ToString();
                             grid[i][j].Font = new Font(grid[i][j].Font, FontStyle.Bold);
                         }
+                        grid[i][j].Enabled = true;
                     }
+                    grid_Select[i].Enabled = true;
                 }
+                timer.Start();
+                cbDif.Enabled = false;
+                btnPlay.Enabled = false;
+                btnStop.Enabled = true;
             }
         }
 
         private void Main_Form_Load(object sender, EventArgs e)
         {
+            Label[] grid_Select_temp = { Click_1, Click_2, Click_3, Click_4, Click_5, Click_6, Click_7, Click_8, Click_9 };
             Label[] temp1 = { Matrix_1_1, Matrix_1_2, Matrix_1_3, Matrix_1_4, Matrix_1_5, Matrix_1_6, Matrix_1_7, Matrix_1_8, Matrix_1_9 };
             Label[] temp2 = { Matrix_2_1, Matrix_2_2, Matrix_2_3, Matrix_2_4, Matrix_2_5, Matrix_2_6, Matrix_2_7, Matrix_2_8, Matrix_2_9 };
             Label[] temp3 = { Matrix_3_1, Matrix_3_2, Matrix_3_3, Matrix_3_4, Matrix_3_5, Matrix_3_6, Matrix_3_7, Matrix_3_8, Matrix_3_9 };
@@ -65,6 +81,35 @@ namespace VP_Proekt2016
             grid[6] = temp7;
             grid[7] = temp8;
             grid[8] = temp9;
+            grid_Select = grid_Select_temp;
+
+            timer.Tick += new EventHandler(tVreme_Tick);
+            timer.Interval = 1000; // 1 second
+
+            flag = false;
+        }
+        private void tVreme_Tick(object sender, EventArgs e)
+        {
+            duration_sec++;
+            if (duration_sec > 59)
+            {
+                duration_min++;
+                duration_sec = 0;
+            }
+            if (duration_min > 59)
+            {
+                duration_hrs++;
+                duration_min = 0;
+                flag = true;
+            }
+            if (flag)
+            {
+                lbl_timer.Text = string.Format("Timer:\n{0:00}:{1:00}:{2:00}", duration_hrs, duration_min, duration_sec);
+            }
+            else
+            {
+                lbl_timer.Text = string.Format("Timer:\n{0:00}:{1:00}", duration_min, duration_sec);
+            }
         }
         private void smeniSelektiran(Label tekoven)
         {
@@ -108,6 +153,36 @@ namespace VP_Proekt2016
         {
             Label temp = (Label)sender;
             vnesiBroj(temp);
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Do you really wish to stop the game", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                timer.Stop();
+                lbl_timer.Text = "";
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        grid[i][j].Enabled = false;
+                        grid[i][j].Text = "";
+                        grid[i][j].Font = new Font(grid[i][j].Font, FontStyle.Regular);
+                    }
+                    grid_Select[i].Enabled = false;
+                }
+                cbDif.Enabled = true;
+                btnPlay.Enabled = true;
+                btnStop.Enabled = false;
+                duration_hrs = 0;
+                duration_min = 0;
+                duration_sec = 0;
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                
+            }
         }
     }
 }

@@ -123,6 +123,8 @@
             this.Click_9 = new System.Windows.Forms.Label();
             this.Click_7 = new System.Windows.Forms.Label();
             this.Click_8 = new System.Windows.Forms.Label();
+            this.lbl_timer = new System.Windows.Forms.Label();
+            this.btnStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -172,6 +174,7 @@
             // 
             this.Matrix_1_1.BackColor = System.Drawing.Color.White;
             this.Matrix_1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_1.Enabled = false;
             this.Matrix_1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_1.Location = new System.Drawing.Point(218, 37);
             this.Matrix_1_1.Margin = new System.Windows.Forms.Padding(0);
@@ -186,6 +189,7 @@
             // 
             this.Matrix_1_2.BackColor = System.Drawing.Color.White;
             this.Matrix_1_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_2.Enabled = false;
             this.Matrix_1_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_2.Location = new System.Drawing.Point(243, 37);
             this.Matrix_1_2.Margin = new System.Windows.Forms.Padding(0);
@@ -200,6 +204,7 @@
             // 
             this.Matrix_1_3.BackColor = System.Drawing.Color.White;
             this.Matrix_1_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_3.Enabled = false;
             this.Matrix_1_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_3.Location = new System.Drawing.Point(268, 37);
             this.Matrix_1_3.Margin = new System.Windows.Forms.Padding(0);
@@ -214,6 +219,7 @@
             // 
             this.Matrix_1_4.BackColor = System.Drawing.Color.White;
             this.Matrix_1_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_4.Enabled = false;
             this.Matrix_1_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_4.Location = new System.Drawing.Point(299, 37);
             this.Matrix_1_4.Margin = new System.Windows.Forms.Padding(0);
@@ -228,6 +234,7 @@
             // 
             this.Matrix_1_5.BackColor = System.Drawing.Color.White;
             this.Matrix_1_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_5.Enabled = false;
             this.Matrix_1_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_5.Location = new System.Drawing.Point(324, 37);
             this.Matrix_1_5.Margin = new System.Windows.Forms.Padding(0);
@@ -242,6 +249,7 @@
             // 
             this.Matrix_1_6.BackColor = System.Drawing.Color.White;
             this.Matrix_1_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_6.Enabled = false;
             this.Matrix_1_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_6.Location = new System.Drawing.Point(349, 37);
             this.Matrix_1_6.Margin = new System.Windows.Forms.Padding(0);
@@ -256,6 +264,7 @@
             // 
             this.Matrix_1_7.BackColor = System.Drawing.Color.White;
             this.Matrix_1_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_7.Enabled = false;
             this.Matrix_1_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_7.Location = new System.Drawing.Point(380, 37);
             this.Matrix_1_7.Margin = new System.Windows.Forms.Padding(0);
@@ -270,6 +279,7 @@
             // 
             this.Matrix_1_8.BackColor = System.Drawing.Color.White;
             this.Matrix_1_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_8.Enabled = false;
             this.Matrix_1_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_8.Location = new System.Drawing.Point(405, 37);
             this.Matrix_1_8.Margin = new System.Windows.Forms.Padding(0);
@@ -284,6 +294,7 @@
             // 
             this.Matrix_1_9.BackColor = System.Drawing.Color.White;
             this.Matrix_1_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_1_9.Enabled = false;
             this.Matrix_1_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_1_9.Location = new System.Drawing.Point(430, 37);
             this.Matrix_1_9.Margin = new System.Windows.Forms.Padding(0);
@@ -298,6 +309,7 @@
             // 
             this.Matrix_2_9.BackColor = System.Drawing.Color.White;
             this.Matrix_2_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_9.Enabled = false;
             this.Matrix_2_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_9.Location = new System.Drawing.Point(430, 62);
             this.Matrix_2_9.Margin = new System.Windows.Forms.Padding(0);
@@ -312,6 +324,7 @@
             // 
             this.Matrix_2_8.BackColor = System.Drawing.Color.White;
             this.Matrix_2_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_8.Enabled = false;
             this.Matrix_2_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_8.Location = new System.Drawing.Point(405, 62);
             this.Matrix_2_8.Margin = new System.Windows.Forms.Padding(0);
@@ -326,6 +339,7 @@
             // 
             this.Matrix_2_7.BackColor = System.Drawing.Color.White;
             this.Matrix_2_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_7.Enabled = false;
             this.Matrix_2_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_7.Location = new System.Drawing.Point(380, 62);
             this.Matrix_2_7.Margin = new System.Windows.Forms.Padding(0);
@@ -340,6 +354,7 @@
             // 
             this.Matrix_2_6.BackColor = System.Drawing.Color.White;
             this.Matrix_2_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_6.Enabled = false;
             this.Matrix_2_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_6.Location = new System.Drawing.Point(349, 62);
             this.Matrix_2_6.Margin = new System.Windows.Forms.Padding(0);
@@ -354,6 +369,7 @@
             // 
             this.Matrix_2_5.BackColor = System.Drawing.Color.White;
             this.Matrix_2_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_5.Enabled = false;
             this.Matrix_2_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_5.Location = new System.Drawing.Point(324, 62);
             this.Matrix_2_5.Margin = new System.Windows.Forms.Padding(0);
@@ -368,6 +384,7 @@
             // 
             this.Matrix_2_4.BackColor = System.Drawing.Color.White;
             this.Matrix_2_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_4.Enabled = false;
             this.Matrix_2_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_4.Location = new System.Drawing.Point(299, 62);
             this.Matrix_2_4.Margin = new System.Windows.Forms.Padding(0);
@@ -382,6 +399,7 @@
             // 
             this.Matrix_2_3.BackColor = System.Drawing.Color.White;
             this.Matrix_2_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_3.Enabled = false;
             this.Matrix_2_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_3.Location = new System.Drawing.Point(268, 62);
             this.Matrix_2_3.Margin = new System.Windows.Forms.Padding(0);
@@ -396,6 +414,7 @@
             // 
             this.Matrix_2_2.BackColor = System.Drawing.Color.White;
             this.Matrix_2_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_2.Enabled = false;
             this.Matrix_2_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_2.Location = new System.Drawing.Point(243, 62);
             this.Matrix_2_2.Margin = new System.Windows.Forms.Padding(0);
@@ -410,6 +429,7 @@
             // 
             this.Matrix_2_1.BackColor = System.Drawing.Color.White;
             this.Matrix_2_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_2_1.Enabled = false;
             this.Matrix_2_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_2_1.Location = new System.Drawing.Point(218, 62);
             this.Matrix_2_1.Margin = new System.Windows.Forms.Padding(0);
@@ -424,6 +444,7 @@
             // 
             this.Matrix_3_9.BackColor = System.Drawing.Color.White;
             this.Matrix_3_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_9.Enabled = false;
             this.Matrix_3_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_9.Location = new System.Drawing.Point(430, 87);
             this.Matrix_3_9.Margin = new System.Windows.Forms.Padding(0);
@@ -438,6 +459,7 @@
             // 
             this.Matrix_3_8.BackColor = System.Drawing.Color.White;
             this.Matrix_3_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_8.Enabled = false;
             this.Matrix_3_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_8.Location = new System.Drawing.Point(405, 87);
             this.Matrix_3_8.Margin = new System.Windows.Forms.Padding(0);
@@ -452,6 +474,7 @@
             // 
             this.Matrix_3_7.BackColor = System.Drawing.Color.White;
             this.Matrix_3_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_7.Enabled = false;
             this.Matrix_3_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_7.Location = new System.Drawing.Point(380, 87);
             this.Matrix_3_7.Margin = new System.Windows.Forms.Padding(0);
@@ -466,6 +489,7 @@
             // 
             this.Matrix_3_6.BackColor = System.Drawing.Color.White;
             this.Matrix_3_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_6.Enabled = false;
             this.Matrix_3_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_6.Location = new System.Drawing.Point(349, 87);
             this.Matrix_3_6.Margin = new System.Windows.Forms.Padding(0);
@@ -480,6 +504,7 @@
             // 
             this.Matrix_3_5.BackColor = System.Drawing.Color.White;
             this.Matrix_3_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_5.Enabled = false;
             this.Matrix_3_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_5.Location = new System.Drawing.Point(324, 87);
             this.Matrix_3_5.Margin = new System.Windows.Forms.Padding(0);
@@ -494,6 +519,7 @@
             // 
             this.Matrix_3_4.BackColor = System.Drawing.Color.White;
             this.Matrix_3_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_4.Enabled = false;
             this.Matrix_3_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_4.Location = new System.Drawing.Point(299, 87);
             this.Matrix_3_4.Margin = new System.Windows.Forms.Padding(0);
@@ -508,6 +534,7 @@
             // 
             this.Matrix_3_3.BackColor = System.Drawing.Color.White;
             this.Matrix_3_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_3.Enabled = false;
             this.Matrix_3_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_3.Location = new System.Drawing.Point(268, 87);
             this.Matrix_3_3.Margin = new System.Windows.Forms.Padding(0);
@@ -522,6 +549,7 @@
             // 
             this.Matrix_3_2.BackColor = System.Drawing.Color.White;
             this.Matrix_3_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_2.Enabled = false;
             this.Matrix_3_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_2.Location = new System.Drawing.Point(243, 87);
             this.Matrix_3_2.Margin = new System.Windows.Forms.Padding(0);
@@ -536,6 +564,7 @@
             // 
             this.Matrix_3_1.BackColor = System.Drawing.Color.White;
             this.Matrix_3_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_3_1.Enabled = false;
             this.Matrix_3_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_3_1.Location = new System.Drawing.Point(218, 87);
             this.Matrix_3_1.Margin = new System.Windows.Forms.Padding(0);
@@ -550,6 +579,7 @@
             // 
             this.Matrix_4_9.BackColor = System.Drawing.Color.White;
             this.Matrix_4_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_9.Enabled = false;
             this.Matrix_4_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_9.Location = new System.Drawing.Point(430, 118);
             this.Matrix_4_9.Margin = new System.Windows.Forms.Padding(0);
@@ -564,6 +594,7 @@
             // 
             this.Matrix_4_8.BackColor = System.Drawing.Color.White;
             this.Matrix_4_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_8.Enabled = false;
             this.Matrix_4_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_8.Location = new System.Drawing.Point(405, 118);
             this.Matrix_4_8.Margin = new System.Windows.Forms.Padding(0);
@@ -578,6 +609,7 @@
             // 
             this.Matrix_4_7.BackColor = System.Drawing.Color.White;
             this.Matrix_4_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_7.Enabled = false;
             this.Matrix_4_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_7.Location = new System.Drawing.Point(380, 118);
             this.Matrix_4_7.Margin = new System.Windows.Forms.Padding(0);
@@ -592,6 +624,7 @@
             // 
             this.Matrix_4_6.BackColor = System.Drawing.Color.White;
             this.Matrix_4_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_6.Enabled = false;
             this.Matrix_4_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_6.Location = new System.Drawing.Point(349, 118);
             this.Matrix_4_6.Margin = new System.Windows.Forms.Padding(0);
@@ -606,6 +639,7 @@
             // 
             this.Matrix_4_5.BackColor = System.Drawing.Color.White;
             this.Matrix_4_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_5.Enabled = false;
             this.Matrix_4_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_5.Location = new System.Drawing.Point(324, 118);
             this.Matrix_4_5.Margin = new System.Windows.Forms.Padding(0);
@@ -620,6 +654,7 @@
             // 
             this.Matrix_4_4.BackColor = System.Drawing.Color.White;
             this.Matrix_4_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_4.Enabled = false;
             this.Matrix_4_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_4.Location = new System.Drawing.Point(299, 118);
             this.Matrix_4_4.Margin = new System.Windows.Forms.Padding(0);
@@ -634,6 +669,7 @@
             // 
             this.Matrix_4_3.BackColor = System.Drawing.Color.White;
             this.Matrix_4_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_3.Enabled = false;
             this.Matrix_4_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_3.Location = new System.Drawing.Point(268, 118);
             this.Matrix_4_3.Margin = new System.Windows.Forms.Padding(0);
@@ -648,6 +684,7 @@
             // 
             this.Matrix_4_2.BackColor = System.Drawing.Color.White;
             this.Matrix_4_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_2.Enabled = false;
             this.Matrix_4_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_2.Location = new System.Drawing.Point(243, 118);
             this.Matrix_4_2.Margin = new System.Windows.Forms.Padding(0);
@@ -662,6 +699,7 @@
             // 
             this.Matrix_4_1.BackColor = System.Drawing.Color.White;
             this.Matrix_4_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_4_1.Enabled = false;
             this.Matrix_4_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_4_1.Location = new System.Drawing.Point(218, 118);
             this.Matrix_4_1.Margin = new System.Windows.Forms.Padding(0);
@@ -676,6 +714,7 @@
             // 
             this.Matrix_5_9.BackColor = System.Drawing.Color.White;
             this.Matrix_5_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_9.Enabled = false;
             this.Matrix_5_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_9.Location = new System.Drawing.Point(430, 143);
             this.Matrix_5_9.Margin = new System.Windows.Forms.Padding(0);
@@ -690,6 +729,7 @@
             // 
             this.Matrix_5_8.BackColor = System.Drawing.Color.White;
             this.Matrix_5_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_8.Enabled = false;
             this.Matrix_5_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_8.Location = new System.Drawing.Point(405, 143);
             this.Matrix_5_8.Margin = new System.Windows.Forms.Padding(0);
@@ -704,6 +744,7 @@
             // 
             this.Matrix_5_7.BackColor = System.Drawing.Color.White;
             this.Matrix_5_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_7.Enabled = false;
             this.Matrix_5_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_7.Location = new System.Drawing.Point(380, 143);
             this.Matrix_5_7.Margin = new System.Windows.Forms.Padding(0);
@@ -718,6 +759,7 @@
             // 
             this.Matrix_5_6.BackColor = System.Drawing.Color.White;
             this.Matrix_5_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_6.Enabled = false;
             this.Matrix_5_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_6.Location = new System.Drawing.Point(349, 143);
             this.Matrix_5_6.Margin = new System.Windows.Forms.Padding(0);
@@ -732,6 +774,7 @@
             // 
             this.Matrix_5_5.BackColor = System.Drawing.Color.White;
             this.Matrix_5_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_5.Enabled = false;
             this.Matrix_5_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_5.Location = new System.Drawing.Point(324, 143);
             this.Matrix_5_5.Margin = new System.Windows.Forms.Padding(0);
@@ -746,6 +789,7 @@
             // 
             this.Matrix_5_4.BackColor = System.Drawing.Color.White;
             this.Matrix_5_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_4.Enabled = false;
             this.Matrix_5_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_4.Location = new System.Drawing.Point(299, 143);
             this.Matrix_5_4.Margin = new System.Windows.Forms.Padding(0);
@@ -760,6 +804,7 @@
             // 
             this.Matrix_5_3.BackColor = System.Drawing.Color.White;
             this.Matrix_5_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_3.Enabled = false;
             this.Matrix_5_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_3.Location = new System.Drawing.Point(268, 143);
             this.Matrix_5_3.Margin = new System.Windows.Forms.Padding(0);
@@ -774,6 +819,7 @@
             // 
             this.Matrix_5_2.BackColor = System.Drawing.Color.White;
             this.Matrix_5_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_2.Enabled = false;
             this.Matrix_5_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_2.Location = new System.Drawing.Point(243, 143);
             this.Matrix_5_2.Margin = new System.Windows.Forms.Padding(0);
@@ -788,6 +834,7 @@
             // 
             this.Matrix_5_1.BackColor = System.Drawing.Color.White;
             this.Matrix_5_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_5_1.Enabled = false;
             this.Matrix_5_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_5_1.Location = new System.Drawing.Point(218, 143);
             this.Matrix_5_1.Margin = new System.Windows.Forms.Padding(0);
@@ -802,6 +849,7 @@
             // 
             this.Matrix_6_9.BackColor = System.Drawing.Color.White;
             this.Matrix_6_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_9.Enabled = false;
             this.Matrix_6_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_9.Location = new System.Drawing.Point(430, 168);
             this.Matrix_6_9.Margin = new System.Windows.Forms.Padding(0);
@@ -816,6 +864,7 @@
             // 
             this.Matrix_6_8.BackColor = System.Drawing.Color.White;
             this.Matrix_6_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_8.Enabled = false;
             this.Matrix_6_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_8.Location = new System.Drawing.Point(405, 168);
             this.Matrix_6_8.Margin = new System.Windows.Forms.Padding(0);
@@ -830,6 +879,7 @@
             // 
             this.Matrix_6_7.BackColor = System.Drawing.Color.White;
             this.Matrix_6_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_7.Enabled = false;
             this.Matrix_6_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_7.Location = new System.Drawing.Point(380, 168);
             this.Matrix_6_7.Margin = new System.Windows.Forms.Padding(0);
@@ -844,6 +894,7 @@
             // 
             this.Matrix_6_6.BackColor = System.Drawing.Color.White;
             this.Matrix_6_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_6.Enabled = false;
             this.Matrix_6_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_6.Location = new System.Drawing.Point(349, 168);
             this.Matrix_6_6.Margin = new System.Windows.Forms.Padding(0);
@@ -858,6 +909,7 @@
             // 
             this.Matrix_6_5.BackColor = System.Drawing.Color.White;
             this.Matrix_6_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_5.Enabled = false;
             this.Matrix_6_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_5.Location = new System.Drawing.Point(324, 168);
             this.Matrix_6_5.Margin = new System.Windows.Forms.Padding(0);
@@ -872,6 +924,7 @@
             // 
             this.Matrix_6_4.BackColor = System.Drawing.Color.White;
             this.Matrix_6_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_4.Enabled = false;
             this.Matrix_6_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_4.Location = new System.Drawing.Point(299, 168);
             this.Matrix_6_4.Margin = new System.Windows.Forms.Padding(0);
@@ -886,6 +939,7 @@
             // 
             this.Matrix_6_3.BackColor = System.Drawing.Color.White;
             this.Matrix_6_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_3.Enabled = false;
             this.Matrix_6_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_3.Location = new System.Drawing.Point(268, 168);
             this.Matrix_6_3.Margin = new System.Windows.Forms.Padding(0);
@@ -900,6 +954,7 @@
             // 
             this.Matrix_6_2.BackColor = System.Drawing.Color.White;
             this.Matrix_6_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_2.Enabled = false;
             this.Matrix_6_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_2.Location = new System.Drawing.Point(243, 168);
             this.Matrix_6_2.Margin = new System.Windows.Forms.Padding(0);
@@ -914,6 +969,7 @@
             // 
             this.Matrix_6_1.BackColor = System.Drawing.Color.White;
             this.Matrix_6_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_6_1.Enabled = false;
             this.Matrix_6_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_6_1.Location = new System.Drawing.Point(218, 168);
             this.Matrix_6_1.Margin = new System.Windows.Forms.Padding(0);
@@ -928,6 +984,7 @@
             // 
             this.Matrix_7_9.BackColor = System.Drawing.Color.White;
             this.Matrix_7_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_9.Enabled = false;
             this.Matrix_7_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_9.Location = new System.Drawing.Point(430, 199);
             this.Matrix_7_9.Margin = new System.Windows.Forms.Padding(0);
@@ -942,6 +999,7 @@
             // 
             this.Matrix_7_8.BackColor = System.Drawing.Color.White;
             this.Matrix_7_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_8.Enabled = false;
             this.Matrix_7_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_8.Location = new System.Drawing.Point(405, 199);
             this.Matrix_7_8.Margin = new System.Windows.Forms.Padding(0);
@@ -956,6 +1014,7 @@
             // 
             this.Matrix_7_7.BackColor = System.Drawing.Color.White;
             this.Matrix_7_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_7.Enabled = false;
             this.Matrix_7_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_7.Location = new System.Drawing.Point(380, 199);
             this.Matrix_7_7.Margin = new System.Windows.Forms.Padding(0);
@@ -970,6 +1029,7 @@
             // 
             this.Matrix_7_6.BackColor = System.Drawing.Color.White;
             this.Matrix_7_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_6.Enabled = false;
             this.Matrix_7_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_6.Location = new System.Drawing.Point(349, 199);
             this.Matrix_7_6.Margin = new System.Windows.Forms.Padding(0);
@@ -984,6 +1044,7 @@
             // 
             this.Matrix_7_5.BackColor = System.Drawing.Color.White;
             this.Matrix_7_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_5.Enabled = false;
             this.Matrix_7_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_5.Location = new System.Drawing.Point(324, 199);
             this.Matrix_7_5.Margin = new System.Windows.Forms.Padding(0);
@@ -998,6 +1059,7 @@
             // 
             this.Matrix_7_4.BackColor = System.Drawing.Color.White;
             this.Matrix_7_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_4.Enabled = false;
             this.Matrix_7_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_4.Location = new System.Drawing.Point(299, 199);
             this.Matrix_7_4.Margin = new System.Windows.Forms.Padding(0);
@@ -1012,6 +1074,7 @@
             // 
             this.Matrix_7_3.BackColor = System.Drawing.Color.White;
             this.Matrix_7_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_3.Enabled = false;
             this.Matrix_7_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_3.Location = new System.Drawing.Point(268, 199);
             this.Matrix_7_3.Margin = new System.Windows.Forms.Padding(0);
@@ -1026,6 +1089,7 @@
             // 
             this.Matrix_7_2.BackColor = System.Drawing.Color.White;
             this.Matrix_7_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_2.Enabled = false;
             this.Matrix_7_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_2.Location = new System.Drawing.Point(243, 199);
             this.Matrix_7_2.Margin = new System.Windows.Forms.Padding(0);
@@ -1040,6 +1104,7 @@
             // 
             this.Matrix_7_1.BackColor = System.Drawing.Color.White;
             this.Matrix_7_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_7_1.Enabled = false;
             this.Matrix_7_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_7_1.Location = new System.Drawing.Point(218, 199);
             this.Matrix_7_1.Margin = new System.Windows.Forms.Padding(0);
@@ -1054,6 +1119,7 @@
             // 
             this.Matrix_8_9.BackColor = System.Drawing.Color.White;
             this.Matrix_8_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_9.Enabled = false;
             this.Matrix_8_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_9.Location = new System.Drawing.Point(430, 224);
             this.Matrix_8_9.Margin = new System.Windows.Forms.Padding(0);
@@ -1068,6 +1134,7 @@
             // 
             this.Matrix_8_8.BackColor = System.Drawing.Color.White;
             this.Matrix_8_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_8.Enabled = false;
             this.Matrix_8_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_8.Location = new System.Drawing.Point(405, 224);
             this.Matrix_8_8.Margin = new System.Windows.Forms.Padding(0);
@@ -1082,6 +1149,7 @@
             // 
             this.Matrix_8_7.BackColor = System.Drawing.Color.White;
             this.Matrix_8_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_7.Enabled = false;
             this.Matrix_8_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_7.Location = new System.Drawing.Point(380, 224);
             this.Matrix_8_7.Margin = new System.Windows.Forms.Padding(0);
@@ -1096,6 +1164,7 @@
             // 
             this.Matrix_8_6.BackColor = System.Drawing.Color.White;
             this.Matrix_8_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_6.Enabled = false;
             this.Matrix_8_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_6.Location = new System.Drawing.Point(349, 224);
             this.Matrix_8_6.Margin = new System.Windows.Forms.Padding(0);
@@ -1110,6 +1179,7 @@
             // 
             this.Matrix_8_5.BackColor = System.Drawing.Color.White;
             this.Matrix_8_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_5.Enabled = false;
             this.Matrix_8_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_5.Location = new System.Drawing.Point(324, 224);
             this.Matrix_8_5.Margin = new System.Windows.Forms.Padding(0);
@@ -1124,6 +1194,7 @@
             // 
             this.Matrix_8_4.BackColor = System.Drawing.Color.White;
             this.Matrix_8_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_4.Enabled = false;
             this.Matrix_8_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_4.Location = new System.Drawing.Point(299, 224);
             this.Matrix_8_4.Margin = new System.Windows.Forms.Padding(0);
@@ -1138,6 +1209,7 @@
             // 
             this.Matrix_8_3.BackColor = System.Drawing.Color.White;
             this.Matrix_8_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_3.Enabled = false;
             this.Matrix_8_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_3.Location = new System.Drawing.Point(268, 224);
             this.Matrix_8_3.Margin = new System.Windows.Forms.Padding(0);
@@ -1152,6 +1224,7 @@
             // 
             this.Matrix_8_2.BackColor = System.Drawing.Color.White;
             this.Matrix_8_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_2.Enabled = false;
             this.Matrix_8_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_2.Location = new System.Drawing.Point(243, 224);
             this.Matrix_8_2.Margin = new System.Windows.Forms.Padding(0);
@@ -1166,6 +1239,7 @@
             // 
             this.Matrix_8_1.BackColor = System.Drawing.Color.White;
             this.Matrix_8_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_8_1.Enabled = false;
             this.Matrix_8_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_8_1.Location = new System.Drawing.Point(218, 224);
             this.Matrix_8_1.Margin = new System.Windows.Forms.Padding(0);
@@ -1180,6 +1254,7 @@
             // 
             this.Matrix_9_9.BackColor = System.Drawing.Color.White;
             this.Matrix_9_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_9.Enabled = false;
             this.Matrix_9_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_9.Location = new System.Drawing.Point(430, 249);
             this.Matrix_9_9.Margin = new System.Windows.Forms.Padding(0);
@@ -1194,6 +1269,7 @@
             // 
             this.Matrix_9_8.BackColor = System.Drawing.Color.White;
             this.Matrix_9_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_8.Enabled = false;
             this.Matrix_9_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_8.Location = new System.Drawing.Point(405, 249);
             this.Matrix_9_8.Margin = new System.Windows.Forms.Padding(0);
@@ -1208,6 +1284,7 @@
             // 
             this.Matrix_9_7.BackColor = System.Drawing.Color.White;
             this.Matrix_9_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_7.Enabled = false;
             this.Matrix_9_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_7.Location = new System.Drawing.Point(380, 249);
             this.Matrix_9_7.Margin = new System.Windows.Forms.Padding(0);
@@ -1222,6 +1299,7 @@
             // 
             this.Matrix_9_6.BackColor = System.Drawing.Color.White;
             this.Matrix_9_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_6.Enabled = false;
             this.Matrix_9_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_6.Location = new System.Drawing.Point(349, 249);
             this.Matrix_9_6.Margin = new System.Windows.Forms.Padding(0);
@@ -1236,6 +1314,7 @@
             // 
             this.Matrix_9_5.BackColor = System.Drawing.Color.White;
             this.Matrix_9_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_5.Enabled = false;
             this.Matrix_9_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_5.Location = new System.Drawing.Point(324, 249);
             this.Matrix_9_5.Margin = new System.Windows.Forms.Padding(0);
@@ -1250,6 +1329,7 @@
             // 
             this.Matrix_9_4.BackColor = System.Drawing.Color.White;
             this.Matrix_9_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_4.Enabled = false;
             this.Matrix_9_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_4.Location = new System.Drawing.Point(299, 249);
             this.Matrix_9_4.Margin = new System.Windows.Forms.Padding(0);
@@ -1264,6 +1344,7 @@
             // 
             this.Matrix_9_3.BackColor = System.Drawing.Color.White;
             this.Matrix_9_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_3.Enabled = false;
             this.Matrix_9_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_3.Location = new System.Drawing.Point(268, 249);
             this.Matrix_9_3.Margin = new System.Windows.Forms.Padding(0);
@@ -1278,6 +1359,7 @@
             // 
             this.Matrix_9_2.BackColor = System.Drawing.Color.White;
             this.Matrix_9_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_2.Enabled = false;
             this.Matrix_9_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_2.Location = new System.Drawing.Point(243, 249);
             this.Matrix_9_2.Margin = new System.Windows.Forms.Padding(0);
@@ -1292,6 +1374,7 @@
             // 
             this.Matrix_9_1.BackColor = System.Drawing.Color.White;
             this.Matrix_9_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Matrix_9_1.Enabled = false;
             this.Matrix_9_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Matrix_9_1.Location = new System.Drawing.Point(218, 249);
             this.Matrix_9_1.Margin = new System.Windows.Forms.Padding(0);
@@ -1305,6 +1388,7 @@
             // Click_2
             // 
             this.Click_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_2.Enabled = false;
             this.Click_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_2.Location = new System.Drawing.Point(77, 191);
             this.Click_2.Margin = new System.Windows.Forms.Padding(2);
@@ -1318,6 +1402,7 @@
             // Click_1
             // 
             this.Click_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_1.Enabled = false;
             this.Click_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_1.Location = new System.Drawing.Point(43, 191);
             this.Click_1.Margin = new System.Windows.Forms.Padding(2);
@@ -1331,6 +1416,7 @@
             // Click_3
             // 
             this.Click_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_3.Enabled = false;
             this.Click_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_3.Location = new System.Drawing.Point(111, 191);
             this.Click_3.Margin = new System.Windows.Forms.Padding(2);
@@ -1344,6 +1430,7 @@
             // Click_6
             // 
             this.Click_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_6.Enabled = false;
             this.Click_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_6.Location = new System.Drawing.Point(111, 225);
             this.Click_6.Margin = new System.Windows.Forms.Padding(2);
@@ -1357,6 +1444,7 @@
             // Click_4
             // 
             this.Click_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_4.Enabled = false;
             this.Click_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_4.Location = new System.Drawing.Point(43, 225);
             this.Click_4.Margin = new System.Windows.Forms.Padding(2);
@@ -1370,6 +1458,7 @@
             // Click_5
             // 
             this.Click_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_5.Enabled = false;
             this.Click_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_5.Location = new System.Drawing.Point(77, 225);
             this.Click_5.Margin = new System.Windows.Forms.Padding(2);
@@ -1383,6 +1472,7 @@
             // Click_9
             // 
             this.Click_9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_9.Enabled = false;
             this.Click_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_9.Location = new System.Drawing.Point(111, 259);
             this.Click_9.Margin = new System.Windows.Forms.Padding(2);
@@ -1396,6 +1486,7 @@
             // Click_7
             // 
             this.Click_7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_7.Enabled = false;
             this.Click_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_7.Location = new System.Drawing.Point(43, 259);
             this.Click_7.Margin = new System.Windows.Forms.Padding(2);
@@ -1409,6 +1500,7 @@
             // Click_8
             // 
             this.Click_8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Click_8.Enabled = false;
             this.Click_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Click_8.Location = new System.Drawing.Point(77, 259);
             this.Click_8.Margin = new System.Windows.Forms.Padding(2);
@@ -1419,12 +1511,34 @@
             this.Click_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Click_8.Click += new System.EventHandler(this.Click_9_Click);
             // 
+            // lbl_timer
+            // 
+            this.lbl_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_timer.Location = new System.Drawing.Point(243, 288);
+            this.lbl_timer.Name = "lbl_timer";
+            this.lbl_timer.Size = new System.Drawing.Size(187, 35);
+            this.lbl_timer.TabIndex = 94;
+            this.lbl_timer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnStop
+            // 
+            this.btnStop.Enabled = false;
+            this.btnStop.Location = new System.Drawing.Point(15, 75);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(121, 23);
+            this.btnStop.TabIndex = 95;
+            this.btnStop.Text = "Stop current game";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(477, 306);
+            this.ClientSize = new System.Drawing.Size(477, 332);
+            this.Controls.Add(this.btnStop);
+            this.Controls.Add(this.lbl_timer);
             this.Controls.Add(this.Click_9);
             this.Controls.Add(this.Click_7);
             this.Controls.Add(this.Click_8);
@@ -1625,5 +1739,7 @@
         private System.Windows.Forms.Label Click_9;
         private System.Windows.Forms.Label Click_7;
         private System.Windows.Forms.Label Click_8;
+        private System.Windows.Forms.Label lbl_timer;
+        private System.Windows.Forms.Button btnStop;
     }
 }
