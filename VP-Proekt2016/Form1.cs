@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,7 +34,15 @@ namespace VP_Proekt2016
         {
             Main_Form tmp = new Main_Form();
             tmp.Show();
-            //this.Dispose();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt"))
+            {
+                System.IO.Directory.CreateDirectory("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku");
+                System.IO.File.WriteAllText(@"C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt", "");
+            }
         }
     }
 }

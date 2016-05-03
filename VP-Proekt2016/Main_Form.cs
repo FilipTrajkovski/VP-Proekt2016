@@ -23,6 +23,7 @@ namespace VP_Proekt2016
         private int duration_hrs = 0;
 
         private bool flag;
+
         public Main_Form()
         {
             InitializeComponent();
