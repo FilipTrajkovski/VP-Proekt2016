@@ -183,6 +183,7 @@
             this.Matrix_1_1.TabIndex = 4;
             this.Matrix_1_1.Text = " ";
             this.Matrix_1_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_2
@@ -198,6 +199,7 @@
             this.Matrix_1_2.TabIndex = 5;
             this.Matrix_1_2.Text = " ";
             this.Matrix_1_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_3
@@ -213,6 +215,7 @@
             this.Matrix_1_3.TabIndex = 6;
             this.Matrix_1_3.Text = " ";
             this.Matrix_1_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_4
@@ -228,6 +231,7 @@
             this.Matrix_1_4.TabIndex = 7;
             this.Matrix_1_4.Text = " ";
             this.Matrix_1_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_5
@@ -243,6 +247,7 @@
             this.Matrix_1_5.TabIndex = 8;
             this.Matrix_1_5.Text = " ";
             this.Matrix_1_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_6
@@ -258,6 +263,7 @@
             this.Matrix_1_6.TabIndex = 9;
             this.Matrix_1_6.Text = " ";
             this.Matrix_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_7
@@ -273,6 +279,7 @@
             this.Matrix_1_7.TabIndex = 10;
             this.Matrix_1_7.Text = " ";
             this.Matrix_1_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_8
@@ -288,6 +295,7 @@
             this.Matrix_1_8.TabIndex = 11;
             this.Matrix_1_8.Text = " ";
             this.Matrix_1_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_1_9
@@ -303,6 +311,7 @@
             this.Matrix_1_9.TabIndex = 12;
             this.Matrix_1_9.Text = " ";
             this.Matrix_1_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_1_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_1_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_9
@@ -318,6 +327,7 @@
             this.Matrix_2_9.TabIndex = 21;
             this.Matrix_2_9.Text = " ";
             this.Matrix_2_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_8
@@ -333,6 +343,7 @@
             this.Matrix_2_8.TabIndex = 20;
             this.Matrix_2_8.Text = " ";
             this.Matrix_2_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_7
@@ -348,6 +359,7 @@
             this.Matrix_2_7.TabIndex = 19;
             this.Matrix_2_7.Text = " ";
             this.Matrix_2_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_6
@@ -363,6 +375,7 @@
             this.Matrix_2_6.TabIndex = 18;
             this.Matrix_2_6.Text = " ";
             this.Matrix_2_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_5
@@ -378,6 +391,7 @@
             this.Matrix_2_5.TabIndex = 17;
             this.Matrix_2_5.Text = " ";
             this.Matrix_2_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_4
@@ -393,6 +407,7 @@
             this.Matrix_2_4.TabIndex = 16;
             this.Matrix_2_4.Text = " ";
             this.Matrix_2_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_3
@@ -408,6 +423,7 @@
             this.Matrix_2_3.TabIndex = 15;
             this.Matrix_2_3.Text = " ";
             this.Matrix_2_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_2
@@ -423,6 +439,7 @@
             this.Matrix_2_2.TabIndex = 14;
             this.Matrix_2_2.Text = " ";
             this.Matrix_2_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_2_1
@@ -438,6 +455,7 @@
             this.Matrix_2_1.TabIndex = 13;
             this.Matrix_2_1.Text = " ";
             this.Matrix_2_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_2_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_2_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_9
@@ -453,6 +471,7 @@
             this.Matrix_3_9.TabIndex = 30;
             this.Matrix_3_9.Text = " ";
             this.Matrix_3_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_8
@@ -468,6 +487,7 @@
             this.Matrix_3_8.TabIndex = 29;
             this.Matrix_3_8.Text = " ";
             this.Matrix_3_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_7
@@ -483,6 +503,7 @@
             this.Matrix_3_7.TabIndex = 28;
             this.Matrix_3_7.Text = " ";
             this.Matrix_3_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_6
@@ -498,6 +519,7 @@
             this.Matrix_3_6.TabIndex = 27;
             this.Matrix_3_6.Text = " ";
             this.Matrix_3_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_5
@@ -513,6 +535,7 @@
             this.Matrix_3_5.TabIndex = 26;
             this.Matrix_3_5.Text = " ";
             this.Matrix_3_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_4
@@ -528,6 +551,7 @@
             this.Matrix_3_4.TabIndex = 25;
             this.Matrix_3_4.Text = " ";
             this.Matrix_3_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_3
@@ -543,6 +567,7 @@
             this.Matrix_3_3.TabIndex = 24;
             this.Matrix_3_3.Text = " ";
             this.Matrix_3_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_2
@@ -558,6 +583,7 @@
             this.Matrix_3_2.TabIndex = 23;
             this.Matrix_3_2.Text = " ";
             this.Matrix_3_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_3_1
@@ -573,6 +599,7 @@
             this.Matrix_3_1.TabIndex = 22;
             this.Matrix_3_1.Text = " ";
             this.Matrix_3_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_3_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_3_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_9
@@ -588,6 +615,7 @@
             this.Matrix_4_9.TabIndex = 39;
             this.Matrix_4_9.Text = " ";
             this.Matrix_4_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_8
@@ -603,6 +631,7 @@
             this.Matrix_4_8.TabIndex = 38;
             this.Matrix_4_8.Text = " ";
             this.Matrix_4_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_7
@@ -618,6 +647,7 @@
             this.Matrix_4_7.TabIndex = 37;
             this.Matrix_4_7.Text = " ";
             this.Matrix_4_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_6
@@ -633,6 +663,7 @@
             this.Matrix_4_6.TabIndex = 36;
             this.Matrix_4_6.Text = " ";
             this.Matrix_4_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_5
@@ -648,6 +679,7 @@
             this.Matrix_4_5.TabIndex = 35;
             this.Matrix_4_5.Text = " ";
             this.Matrix_4_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_4
@@ -663,6 +695,7 @@
             this.Matrix_4_4.TabIndex = 34;
             this.Matrix_4_4.Text = " ";
             this.Matrix_4_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_3
@@ -678,6 +711,7 @@
             this.Matrix_4_3.TabIndex = 33;
             this.Matrix_4_3.Text = " ";
             this.Matrix_4_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_2
@@ -693,6 +727,7 @@
             this.Matrix_4_2.TabIndex = 32;
             this.Matrix_4_2.Text = " ";
             this.Matrix_4_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_4_1
@@ -708,6 +743,7 @@
             this.Matrix_4_1.TabIndex = 31;
             this.Matrix_4_1.Text = " ";
             this.Matrix_4_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_4_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_4_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_9
@@ -723,6 +759,7 @@
             this.Matrix_5_9.TabIndex = 48;
             this.Matrix_5_9.Text = " ";
             this.Matrix_5_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_8
@@ -738,6 +775,7 @@
             this.Matrix_5_8.TabIndex = 47;
             this.Matrix_5_8.Text = " ";
             this.Matrix_5_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_7
@@ -753,6 +791,7 @@
             this.Matrix_5_7.TabIndex = 46;
             this.Matrix_5_7.Text = " ";
             this.Matrix_5_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_6
@@ -768,6 +807,7 @@
             this.Matrix_5_6.TabIndex = 45;
             this.Matrix_5_6.Text = " ";
             this.Matrix_5_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_5
@@ -783,6 +823,7 @@
             this.Matrix_5_5.TabIndex = 44;
             this.Matrix_5_5.Text = " ";
             this.Matrix_5_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_4
@@ -798,6 +839,7 @@
             this.Matrix_5_4.TabIndex = 43;
             this.Matrix_5_4.Text = " ";
             this.Matrix_5_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_3
@@ -813,6 +855,7 @@
             this.Matrix_5_3.TabIndex = 42;
             this.Matrix_5_3.Text = " ";
             this.Matrix_5_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_2
@@ -828,6 +871,7 @@
             this.Matrix_5_2.TabIndex = 41;
             this.Matrix_5_2.Text = " ";
             this.Matrix_5_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_5_1
@@ -843,6 +887,7 @@
             this.Matrix_5_1.TabIndex = 40;
             this.Matrix_5_1.Text = " ";
             this.Matrix_5_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_5_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_5_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_9
@@ -858,6 +903,7 @@
             this.Matrix_6_9.TabIndex = 57;
             this.Matrix_6_9.Text = " ";
             this.Matrix_6_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_8
@@ -873,6 +919,7 @@
             this.Matrix_6_8.TabIndex = 56;
             this.Matrix_6_8.Text = " ";
             this.Matrix_6_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_7
@@ -888,6 +935,7 @@
             this.Matrix_6_7.TabIndex = 55;
             this.Matrix_6_7.Text = " ";
             this.Matrix_6_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_6
@@ -903,6 +951,7 @@
             this.Matrix_6_6.TabIndex = 54;
             this.Matrix_6_6.Text = " ";
             this.Matrix_6_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_5
@@ -918,6 +967,7 @@
             this.Matrix_6_5.TabIndex = 53;
             this.Matrix_6_5.Text = " ";
             this.Matrix_6_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_4
@@ -933,6 +983,7 @@
             this.Matrix_6_4.TabIndex = 52;
             this.Matrix_6_4.Text = " ";
             this.Matrix_6_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_3
@@ -948,6 +999,7 @@
             this.Matrix_6_3.TabIndex = 51;
             this.Matrix_6_3.Text = " ";
             this.Matrix_6_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_2
@@ -963,6 +1015,7 @@
             this.Matrix_6_2.TabIndex = 50;
             this.Matrix_6_2.Text = " ";
             this.Matrix_6_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_6_1
@@ -978,6 +1031,7 @@
             this.Matrix_6_1.TabIndex = 49;
             this.Matrix_6_1.Text = " ";
             this.Matrix_6_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_6_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_6_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_9
@@ -993,6 +1047,7 @@
             this.Matrix_7_9.TabIndex = 66;
             this.Matrix_7_9.Text = " ";
             this.Matrix_7_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_8
@@ -1008,6 +1063,7 @@
             this.Matrix_7_8.TabIndex = 65;
             this.Matrix_7_8.Text = " ";
             this.Matrix_7_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_7
@@ -1023,6 +1079,7 @@
             this.Matrix_7_7.TabIndex = 64;
             this.Matrix_7_7.Text = " ";
             this.Matrix_7_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_6
@@ -1038,6 +1095,7 @@
             this.Matrix_7_6.TabIndex = 63;
             this.Matrix_7_6.Text = " ";
             this.Matrix_7_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_5
@@ -1053,6 +1111,7 @@
             this.Matrix_7_5.TabIndex = 62;
             this.Matrix_7_5.Text = " ";
             this.Matrix_7_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_4
@@ -1068,6 +1127,7 @@
             this.Matrix_7_4.TabIndex = 61;
             this.Matrix_7_4.Text = " ";
             this.Matrix_7_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_3
@@ -1083,6 +1143,7 @@
             this.Matrix_7_3.TabIndex = 60;
             this.Matrix_7_3.Text = " ";
             this.Matrix_7_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_2
@@ -1098,6 +1159,7 @@
             this.Matrix_7_2.TabIndex = 59;
             this.Matrix_7_2.Text = " ";
             this.Matrix_7_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_7_1
@@ -1113,6 +1175,7 @@
             this.Matrix_7_1.TabIndex = 58;
             this.Matrix_7_1.Text = " ";
             this.Matrix_7_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_7_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_7_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_9
@@ -1128,6 +1191,7 @@
             this.Matrix_8_9.TabIndex = 75;
             this.Matrix_8_9.Text = " ";
             this.Matrix_8_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_8
@@ -1143,6 +1207,7 @@
             this.Matrix_8_8.TabIndex = 74;
             this.Matrix_8_8.Text = " ";
             this.Matrix_8_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_7
@@ -1158,6 +1223,7 @@
             this.Matrix_8_7.TabIndex = 73;
             this.Matrix_8_7.Text = " ";
             this.Matrix_8_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_6
@@ -1173,6 +1239,7 @@
             this.Matrix_8_6.TabIndex = 72;
             this.Matrix_8_6.Text = " ";
             this.Matrix_8_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_5
@@ -1188,6 +1255,7 @@
             this.Matrix_8_5.TabIndex = 71;
             this.Matrix_8_5.Text = " ";
             this.Matrix_8_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_4
@@ -1203,6 +1271,7 @@
             this.Matrix_8_4.TabIndex = 70;
             this.Matrix_8_4.Text = " ";
             this.Matrix_8_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_3
@@ -1218,6 +1287,7 @@
             this.Matrix_8_3.TabIndex = 69;
             this.Matrix_8_3.Text = " ";
             this.Matrix_8_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_2
@@ -1233,6 +1303,7 @@
             this.Matrix_8_2.TabIndex = 68;
             this.Matrix_8_2.Text = " ";
             this.Matrix_8_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_8_1
@@ -1248,6 +1319,7 @@
             this.Matrix_8_1.TabIndex = 67;
             this.Matrix_8_1.Text = " ";
             this.Matrix_8_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_8_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_8_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_9
@@ -1263,6 +1335,7 @@
             this.Matrix_9_9.TabIndex = 84;
             this.Matrix_9_9.Text = " ";
             this.Matrix_9_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_9.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_9.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_8
@@ -1278,6 +1351,7 @@
             this.Matrix_9_8.TabIndex = 83;
             this.Matrix_9_8.Text = " ";
             this.Matrix_9_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_8.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_8.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_7
@@ -1293,6 +1367,7 @@
             this.Matrix_9_7.TabIndex = 82;
             this.Matrix_9_7.Text = " ";
             this.Matrix_9_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_7.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_7.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_6
@@ -1308,6 +1383,7 @@
             this.Matrix_9_6.TabIndex = 81;
             this.Matrix_9_6.Text = " ";
             this.Matrix_9_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_6.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_6.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_5
@@ -1323,6 +1399,7 @@
             this.Matrix_9_5.TabIndex = 80;
             this.Matrix_9_5.Text = " ";
             this.Matrix_9_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_5.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_5.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_4
@@ -1338,6 +1415,7 @@
             this.Matrix_9_4.TabIndex = 79;
             this.Matrix_9_4.Text = " ";
             this.Matrix_9_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_4.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_4.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_3
@@ -1353,6 +1431,7 @@
             this.Matrix_9_3.TabIndex = 78;
             this.Matrix_9_3.Text = " ";
             this.Matrix_9_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_3.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_3.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_2
@@ -1368,6 +1447,7 @@
             this.Matrix_9_2.TabIndex = 77;
             this.Matrix_9_2.Text = " ";
             this.Matrix_9_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_2.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_2.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Matrix_9_1
@@ -1383,6 +1463,7 @@
             this.Matrix_9_1.TabIndex = 76;
             this.Matrix_9_1.Text = " ";
             this.Matrix_9_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Matrix_9_1.TextChanged += new System.EventHandler(this.Matrix_9_9_TextChanged);
             this.Matrix_9_1.Click += new System.EventHandler(this.Matrix_1_1_Click);
             // 
             // Click_2

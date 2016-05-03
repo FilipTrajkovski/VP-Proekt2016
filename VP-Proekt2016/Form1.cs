@@ -41,7 +41,11 @@ namespace VP_Proekt2016
             if (!File.Exists("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt"))
             {
                 System.IO.Directory.CreateDirectory("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku");
-                System.IO.File.WriteAllText(@"C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt", "");
+                System.IO.File.WriteAllText(@"C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt", "Easy: 00:00 \nMedium: 00:00 \nHard: 00:00");
+            }
+            if (!File.Exists("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt"))
+            {
+                System.IO.File.WriteAllText(@"C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt", "Easy: 00:00 \nMedium: 00:00 \nHard: 00:00");
             }
         }
     }

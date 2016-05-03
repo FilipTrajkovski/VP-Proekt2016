@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,7 @@ namespace VP_Proekt2016
             }
             else
             {
+                timer.Start();
                 lblSelect.Text = "";
                 string level = cbDif.SelectedItem.ToString();
                 test.GenerirajSet(level);
@@ -53,7 +55,6 @@ namespace VP_Proekt2016
                     }
                     grid_Select[i].Enabled = true;
                 }
-                timer.Start();
                 cbDif.Enabled = false;
                 btnPlay.Enabled = false;
                 btnStop.Enabled = true;
@@ -85,9 +86,29 @@ namespace VP_Proekt2016
             grid_Select = grid_Select_temp;
 
             timer.Tick += new EventHandler(tVreme_Tick);
-            timer.Interval = 1000; // 1 second
+            timer.Interval = 1000;
 
             flag = false;
+        }
+        private void Resetiraj()
+        {
+            lbl_timer.Text = "";
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    grid[i][j].Enabled = false;
+                    grid[i][j].Text = "";
+                    grid[i][j].Font = new Font(grid[i][j].Font, FontStyle.Regular);
+                }
+                grid_Select[i].Enabled = false;
+            }
+            cbDif.Enabled = true;
+            btnPlay.Enabled = true;
+            btnStop.Enabled = false;
+            duration_hrs = 0;
+            duration_min = 0;
+            duration_sec = 0;
         }
         private void tVreme_Tick(object sender, EventArgs e)
         {
@@ -105,11 +126,91 @@ namespace VP_Proekt2016
             }
             if (flag)
             {
-                lbl_timer.Text = string.Format("Timer:\n{0:00}:{1:00}:{2:00}", duration_hrs, duration_min, duration_sec);
+                lbl_timer.Text = string.Format("Timer:\n {0:00}:{1:00}:{2:00}", duration_hrs, duration_min, duration_sec);
             }
             else
             {
-                lbl_timer.Text = string.Format("Timer:\n{0:00}:{1:00}", duration_min, duration_sec);
+                lbl_timer.Text = string.Format("Timer:\n {0:00}:{1:00}", duration_min, duration_sec);
+            }
+            bool flag_tmp = false;
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    int tekoven = 0;
+                    Int32.TryParse(grid[i][j].Text, out tekoven);
+                    if (tekoven != test.resenie[i][j])
+                    {
+                        flag_tmp = true;
+                        break;
+                    }
+                }
+                if (flag_tmp)
+                {
+                    break;
+                }
+            }
+            if (!flag_tmp)
+            {
+                timer.Stop();
+                MessageBox.Show("Congratulations", "Congratulations,you completed the puzzle", MessageBoxButtons.OK);
+                string tekst = File.ReadAllText("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt");
+                string[] del = tekst.Split(' ');
+                string[] vreme = lbl_timer.Text.Split(' ');
+                string[] vreme_prov = null;
+                string[] vreme_prov_mom = vreme[1].Split(':');
+                if (cbDif.SelectedItem.ToString() == "Easy")
+                {
+                    vreme_prov = del[1].Split(':');
+                    if (Int32.Parse(vreme_prov[0]) > Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        del[1] = vreme[1];
+                    }
+                    else if (Int32.Parse(vreme_prov[0]) == Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        if (Int32.Parse(vreme_prov[1]) > Int32.Parse(vreme_prov_mom[1]))
+                        {
+                            del[1] = vreme[1];
+                        }
+                    }
+                }
+                else if (cbDif.SelectedItem.ToString() == "Medium")
+                {
+                    vreme_prov = del[3].Split(':');
+                    if (Int32.Parse(vreme_prov[0]) > Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        del[3] = vreme[1];
+                    }
+                    else if (Int32.Parse(vreme_prov[0]) == Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        if (Int32.Parse(vreme_prov[1]) > Int32.Parse(vreme_prov_mom[1]))
+                        {
+                            del[3] = vreme[1];
+                        }
+                    }
+                }
+                else
+                {
+                    vreme_prov = del[5].Split(':');
+                    if (Int32.Parse(vreme_prov[0]) > Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        del[5] = vreme[1];
+                    }
+                    else if (Int32.Parse(vreme_prov[0]) == Int32.Parse(vreme_prov_mom[0]))
+                    {
+                        if (Int32.Parse(vreme_prov[1]) > Int32.Parse(vreme_prov_mom[1]))
+                        {
+                            del[5] = vreme[1];
+                        }
+                    }
+                }
+                tekst = "";
+                for (int i = 0; i < del.Length; i++)
+                {
+                    tekst += del[i] + " ";
+                }
+                File.WriteAllText("C:\\Users\\" + System.Environment.UserName + "\\Documents\\Sudoku\\High_Scores.txt", tekst);
+                Resetiraj();
             }
         }
         private void smeniSelektiran(Label tekoven)
@@ -158,32 +259,20 @@ namespace VP_Proekt2016
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Do you really wish to stop the game", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Do you really wish to stop the game?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 timer.Stop();
-                lbl_timer.Text = "";
-                for (int i = 0; i < 9; i++)
-                {
-                    for (int j = 0; j < 9; j++)
-                    {
-                        grid[i][j].Enabled = false;
-                        grid[i][j].Text = "";
-                        grid[i][j].Font = new Font(grid[i][j].Font, FontStyle.Regular);
-                    }
-                    grid_Select[i].Enabled = false;
-                }
-                cbDif.Enabled = true;
-                btnPlay.Enabled = true;
-                btnStop.Enabled = false;
-                duration_hrs = 0;
-                duration_min = 0;
-                duration_sec = 0;
+                Resetiraj();
             }
             else if (dialogResult == DialogResult.No)
             {
                 
             }
+        }
+
+        private void Matrix_9_9_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

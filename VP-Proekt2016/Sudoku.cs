@@ -12,7 +12,7 @@ namespace VP_Proekt2016
         private static int KOL_MAX = 9;
         private static int SUB_MATRICA_GOL = 3;
 
-        private int[][] resenie = new int[RED_MAX][];
+        public int[][] resenie = new int[RED_MAX][];
         public int[][] tekovnoResavanje = new int[RED_MAX][];
         private int[][] DefaultSet = new int[RED_MAX][];
 
@@ -61,9 +61,9 @@ namespace VP_Proekt2016
             switch (level)
             {
                 case "Easy":
-                    minPos = 3;
-                    maxPos = 5;
-                    brPodSet = 7;
+                    minPos = 4;
+                    maxPos = 6;
+                    brPodSet = 8;
                     tekovenSet(brPodSet, minPos, maxPos);
                     break;
                 case "Medium":

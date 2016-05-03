@@ -128,6 +128,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "High_Scores";
             this.Text = "High Scores";
+            this.Load += new System.EventHandler(this.High_Scores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
