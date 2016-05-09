@@ -63,7 +63,7 @@ namespace VP_Proekt2016
                 case "Easy":
                     minPos = 4;
                     maxPos = 6;
-                    brPodSet = 8;
+                    brPodSet = 7;
                     tekovenSet(brPodSet, minPos, maxPos);
                     break;
                 case "Medium":
